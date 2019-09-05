@@ -28,7 +28,7 @@
     <td>Jackson</td>
     <td>94</td>
   </tr>
-</table>
+</table>    
 
 ---
 
