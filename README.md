@@ -21,7 +21,7 @@
   <tr>
     <td><img src="https://sjsumlclub.github.io/img/profile/andrew_jong.png" width="150" height="150" /> <br> <h3 align="center">Andrew Jong</h3> <p align="center">President</p></td>
     <td><img src="https://sjsumlclub.github.io/img/profile/jing_zhao.jpg" width="150" height="150" /> <br> <h3 align="center">Jing Zhao</h3> <p align="center">Vice President</p></td>
-    <td><img src="https://i.kym-cdn.com/photos/images/newsfeed/000/926/994/729.gif" width="150" height="150" /> <br> <h3 align="center">Gaston Garrido </h3> <p align="center"> Some guy</p></td>
+    <td><img src="https://i.kym-cdn.com/photos/images/newsfeed/000/926/994/729.gif" width="150" height="150" /> <br> <h3 align="center">Gaston Garrido </h3> <p align="center"> Some guy </p></td>
   </tr>
   <tr>
     <td>Eve</td>
@@ -30,6 +30,9 @@
   </tr>
 </table>    
 
+
+
+  
 ---
 
 ## Contact information
