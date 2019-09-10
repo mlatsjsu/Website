@@ -1,16 +1,16 @@
 <ul class="navbar">
-  <li><a class="links" href="/Website/#contact">Contact Information</a></li>
-  <li><a class="links" href="/Website/#team">Meet the Team</a></li>
-  <li><a class="links" href="/Website/#important-links-">Important Links</a></li>
+  <li><a class="links" href="/Website/#contact-information">Contact Information</a></li>
+  <li><a class="links" href="/Website/#meet-the-team">Meet the Team</a></li>
+  <li><a class="links" href="/Website/#important-links">Important Links</a></li>
   <li><a class="links" href="/Website/#mission">Mission</a></li>
   <li><a class="links" href="/Website/#mlsjsu">Title</a></li>
 </ul>
 <br>
-# ML@SJSU<a name="#mlsjsu"></a>
+# ML@SJSU
 
 ---
 
-## Mission<a name="#mission"></a> 
+## Mission
 
  * To promote machine learning growth at SJSU.  
  * To enhance students with career-enabling skills.  
@@ -18,13 +18,13 @@
  * To promote diversity in machine learning.  
 ---
 
-## Important links<a name="#importantlinks"></a>
+## Important links
 
 [Sign up for ML@SJSU](https://docs.google.com/forms/d/e/1FAIpQLSePkD5O-81AGgtwxGZSegI2_rq0Ic5o7R9KgyOplnd-yCxa9Q/viewform)
 
 ---
 
-## Meet the team<a name="#team"></a>
+## Meet the team
 
 <table>
   <tr>
@@ -44,7 +44,7 @@
   
 ---
 
-## Contact Information<a name="#contact"></a>
+## Contact Information
 
 * Club: 		    `sjsumlclub@gmail.com`
 * President:    `andrew.jong@sjsu.edu`
