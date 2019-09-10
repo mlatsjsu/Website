@@ -1,8 +1,4 @@
 theme: jekyll-theme-cayman
 title: GitHub pages template
 description: A simple template based on minimal jekyll theme
-navigation:
-  - title: Title
-    url: /#ml@sjsu
-  - title: Important Links
-    url: /#important-links
+
