@@ -1,9 +1,9 @@
 <ul class="navbar">
-  <li><a class="links" href="/#contact">Contact Information</a></li>
-  <li><a class="links" href="/#team">Meet the Team</a></li>
-  <li><a class="links" href="/#importantlinks">Important Links</a></li>
-  <li><a class="links" href="/#mission">Mission</a></li>
-  <li><a class="links" href="/#mlsjsu">Title</a></li>
+  <li><a class="links" href="/Website/#contact">Contact Information</a></li>
+  <li><a class="links" href="/Website/#team">Meet the Team</a></li>
+  <li><a class="links" href="/Website/#importantlinks">Important Links</a></li>
+  <li><a class="links" href="/Website/#mission">Mission</a></li>
+  <li><a class="links" href="/Website/#mlsjsu">Title</a></li>
 </ul>
 
 # ML@SJSU<a name="#mlsjsu"></a>
