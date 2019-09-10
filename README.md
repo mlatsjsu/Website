@@ -2,7 +2,7 @@
 title: ML@SJSU
 sidebar:
   title: "Sample Title"
-  nav: sidebar1
+  nav: main
 ---
 
 # ML@SJSU
