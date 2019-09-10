@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+navigation:
+  - title: Top
+    url: /#mlsjsu
+  - title: Setup
+    url: setup
