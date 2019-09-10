@@ -21,7 +21,7 @@
   <tr>
     <td><img src="https://github.com/sjsumlclub/Website/blob/master/slack/AndrewJong.JPG" width="150" height="150" /> <br> <h3 align="center">Andrew Jong</h3> <p align="center">President</p></td>
     <td><img src="https://github.com/sjsumlclub/Website/blob/master/slack/JingZhao.JPG" width="150" height="150" /> <br> <h3 align="center">Jing Zhao</h3> <p align="center">Vice President</p></td>
-    <td><img src="https://github.com/sjsumlclub/Website/blob/master/slack/GastonGarrido1.JPG" width="150" height="150" /> <br> <h3 align="center">Gaston Garrido </h3> <p align="center"> Webmaster </p></td>
+    <td><img src="https://github.com/sjsumlclub/Website/blob/master/slack/GastonGarrido1.jpg" width="150" height="150" /> <br> <h3 align="center">Gaston Garrido </h3> <p align="center"> Webmaster </p></td>
   </tr>
   <tr>
     <td><img src="https://github.com/sjsumlclub/Website/blob/master/slack/JasonJiang.JPG" width="150" height="150" /> <br> <h3 align="center">Jason Jiang </h3> <p align="center"> Officer </p></td>
