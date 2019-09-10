@@ -37,8 +37,8 @@
   </tr>
   <tr>
     <td><img src="slack/JasonJiang.JPG" width="150" height="150" /> <br> <h3 align="center">Jason Jiang </h3> <p align="center"> Officer </p></td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td></td>
+    <td></td>
   </tr>
 </table>    
 
