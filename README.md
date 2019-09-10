@@ -1,3 +1,10 @@
+---
+title: ML@SJSU
+sidebar:
+  title: "Sample Title"
+  nav: sidebar1
+---
+
 # ML@SJSU
 
 ---
