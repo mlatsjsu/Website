@@ -13,7 +13,7 @@
 
  * To promote machine learning growth at SJSU.  
  * To enhance students with career-enabling skills.  
- * To connect students with a common interest in machine learning who wish to collaborate.  
+ * To connect students with a common interest in <br>machine learning who wish to collaborate.  
  * To promote diversity in machine learning.  
  
 ---
