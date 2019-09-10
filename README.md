@@ -1,4 +1,8 @@
+---
+
 # ML@SJSU
+
+---
 
 ## Mission 
 
@@ -40,3 +44,5 @@
 * Club: 		    `sjsumlclub@gmail.com`
 * President:    `andrew.jong@sjsu.edu`
 * VP: 				`jing.zhao@sjsu.edu`
+
+---
