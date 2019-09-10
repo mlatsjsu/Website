@@ -13,6 +13,7 @@
 .links {
   float: right;
   border-right: 1px solid #bbb;
+  color: gray;
 }
 
 .navbar li a {
@@ -22,10 +23,8 @@
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+
 .navbar li a:hover {
   background-color: green;
 }
-body {
-  text-align: left;
-}
+
