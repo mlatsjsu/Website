@@ -1,7 +1,7 @@
 <ul class="navbar">
   <li><a class="links" href="/Website/#contact">Contact Information</a></li>
   <li><a class="links" href="/Website/#team">Meet the Team</a></li>
-  <li><a class="links" href="/Website/#importantlinks">Important Links</a></li>
+  <li><a class="links" href="/Website/#important-links-">Important Links</a></li>
   <li><a class="links" href="/Website/#mission">Mission</a></li>
   <li><a class="links" href="/Website/#mlsjsu">Title</a></li>
 </ul>
@@ -18,13 +18,13 @@
  * To promote diversity in machine learning.  
 ---
 
-## Important links <a name="#importantlinks"></a>
+## Important links<a name="#importantlinks"></a>
 
 [Sign up for ML@SJSU](https://docs.google.com/forms/d/e/1FAIpQLSePkD5O-81AGgtwxGZSegI2_rq0Ic5o7R9KgyOplnd-yCxa9Q/viewform)
 
 ---
 
-## Meet the team <a name="#team"></a>
+## Meet the team<a name="#team"></a>
 
 <table>
   <tr>
@@ -44,7 +44,7 @@
   
 ---
 
-## Contact Information <a name="#contact"></a>
+## Contact Information<a name="#contact"></a>
 
 * Club: 		    `sjsumlclub@gmail.com`
 * President:    `andrew.jong@sjsu.edu`
