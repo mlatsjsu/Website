@@ -15,7 +15,7 @@
   border-right: 1px solid #bbb;
 }
 
-.links a {
+.navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -24,6 +24,6 @@
 }
 
 /* Change the link color to #111 (black) on hover */
-.links a:hover {
+.navbar li a:hover {
   background-color: #111;
 }
