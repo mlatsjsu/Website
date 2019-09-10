@@ -2,10 +2,10 @@
   <li><a class="links" href="default.asp">Home</a></li>
   <li><a class="links" href="news.asp">News</a></li>
   <li><a class="links" href="contact.asp">Contact</a></li>
-  <li><a class="links" href="/Website/#ml@sjsu">About</a></li>
+  <li><a class="links" href="/#mlsjsu">About</a></li>
 </ul>
 
-# ML@SJSU
+# ML@SJSU<a name="#ml@SJSU"></a>
 
 ---
 
@@ -15,7 +15,7 @@
  * To enhance students with career-enabling skills.  
  * To connect students with a common interest in <br>machine learning who wish to collaborate.  
  * To promote diversity in machine learning.  
- 
+ * [Chapter 1](#mlsjsu)
 ---
 
 ## Important links
