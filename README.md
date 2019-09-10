@@ -5,8 +5,8 @@
   <li><a class="links" href="/Website/#mission">Mission</a></li>
   <li><a class="links" href="/Website/#mlsjsu">Title</a></li>
 </ul>
-<br>
 
+<br>
 # ML@SJSU
 
 ---
@@ -17,6 +17,7 @@
  * To enhance students with career-enabling skills.  
  * To connect students with a common interest in <br>machine learning who wish to collaborate.  
  * To promote diversity in machine learning.  
+ 
 ---
 
 ## Important links
