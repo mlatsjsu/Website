@@ -2,7 +2,7 @@
   <li><a class="links" href="default.asp">Home</a></li>
   <li><a class="links" href="news.asp">News</a></li>
   <li><a class="links" href="contact.asp">Contact</a></li>
-  <li><a class="links" href="/#ml@sjsu">About</a></li>
+  <li><a class="links" href="/Website/#ml@sjsu">About</a></li>
 </ul>
 
 # ML@SJSU
