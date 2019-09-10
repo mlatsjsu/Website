@@ -14,9 +14,9 @@
 
 ## Mission
 
- * To promote machine learning growth at SJSU.  
+ * To create a community for students with a common interest in <br>machine learning.  
+ * To promote machine learning growth at SJSU as a whole.  
  * To enhance students with career-enabling skills.  
- * To connect students with a common interest in <br>machine learning who wish to collaborate.  
  * To promote diversity in machine learning.  
  
 ---
@@ -28,7 +28,7 @@
 ---
 
 ## Meet the team
-
+<center>
 <table>
   <tr>
     <td><img src="slack/AndrewJong.JPG" width="150" height="150" /> <br> <h3 align="center">Andrew Jong</h3> <p align="center">President</p></td>
@@ -40,7 +40,8 @@
     <td></td>
     <td></td>
   </tr>
-</table>    
+</table>
+</center>
 
 
 
