@@ -1,0 +1,14 @@
+.icon {
+	margin-right: 20px;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.topic {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 12px !important;
+	color: #222222;
+}

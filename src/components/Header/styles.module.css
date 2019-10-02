@@ -1,0 +1,23 @@
+.bannerArea {
+	background: #f9f9f9;
+	height: 100vh;
+}
+
+.mission {
+	font-size: 58px;
+	font-weight: 700;
+	line-height: 1.15em;
+  margin-bottom: 20px!important;
+  text-transform: uppercase;
+
+  background: -ms-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+	background: -webkit-linear-gradient(0deg, #2380ff 0%, #52fdd9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.missionList {
+  padding: 0;
+  list-style: none;
+  font-size: 1.2em;
+}
