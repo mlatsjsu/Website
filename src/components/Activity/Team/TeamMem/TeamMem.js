@@ -19,7 +19,7 @@ const TeamMem = (props) => {
 					/>
 				</div>
 				<div className="person-content">
-					<h2 style={{ fontWeight: 700 }}>{mem.name}</h2>
+					<h5 style={{ fontWeight: 700 }}>{mem.name}</h5>
 					<p className="person-position" style={{ color: 'rgb(241, 139, 109)', fontSize: 14 }}>
 						{mem.title}
 					</p>

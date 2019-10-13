@@ -18,15 +18,20 @@ const Project = (props) => {
 							className="text-uppercase"
 							target="_blank"
 							rel="noopener noreferrer"
-							style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}
+							style={{ textDecoration: 'none' }}
 						>
-							{project.name}
+							<h4 className="text-uppercase" style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}>
+								{project.name}
+							</h4>
 						</a>
 					) : (
 						<h4 className="text-uppercase" style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}>
 							{project.name}
 						</h4>
 					)}
+					{/* <h4 className="text-uppercase" style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}>
+						{project.name}
+					</h4> */}
 
 					<p style={{ textAlign: 'left', fontSize: 14, color: '#777' }}>{project.description}</p>
 				</div>

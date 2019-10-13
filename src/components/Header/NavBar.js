@@ -1,28 +1,17 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import logo from './logo.svg';
 
 const NavBar = () => {
 	return (
 		<div>
-			<div className="top-header">
+			<div className="top-header" style={{ position: 'absolute', top: 0 }}>
 				<div className="container">
 					<div className="row">
-						<div className="col-sm-4 col-xs-8" style={{ marginTop: 20 }}>
-							<a
-								href="#"
-								style={{
-									color: '#fff',
-									fontSize: 22,
-									textDecoration: 'none',
-									backgroundColor: 'transparent',
-									fontWeight: 700,
-									fontFamily: 'lato'
-								}}
-							>
-								SJSU Machine Learning Club
-							</a>
+						<div id="logo" className="col-sm-4 col-xs-8" style={{ marginTop: 20 }}>
+							<img src={logo} alt="logo" height="66" />
 						</div>
-						<div className="col-sm-8 col-xs-4">
+						<div id="mynav" className="col-sm-8 col-xs-4">
 							<nav className="header-navigation">
 								<ul id="menu-illdy-main" className="clearfix">
 									<li
@@ -88,9 +77,9 @@ const NavBar = () => {
 					</li>
 				</ul>
 			</nav>
-			<div className="bottom-header front-page">
+			{/* <div className="bottom-header front-page">
 				<div className="container" style={{ height: '30vh' }} />
-			</div>
+			</div> */}
 		</div>
 	);
 };

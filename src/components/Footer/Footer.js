@@ -21,50 +21,37 @@ export default class Footer extends Component {
 									</div>
 									<div className="textwidget">
 										<p style={{ color: '#777', fontSize: 14 }}>{contact.email}</p>
-										<p style={{ color: '#777', fontSize: 14 }}>{contact.phone}</p>
 									</div>
 								</div>
 							</div>
 							<div className="col-md-3 col-sm-6 col-xs-12">
 								<div id="text-5" className="widget widget_text">
-									{contact.facebook ? (
+									<div className="widget-title">
+										<h3 style={{ fontWeight: 700 }}>JOIN US ON</h3>
+									</div>
+									{contact.linkedin ? (
 										<a
-											href={contact.facebook}
+											href={contact.linkedin}
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{ color: '#777' }}
 										>
 											<i
-												className="fa fa-facebook-square"
+												className="fa fa-linkedin"
 												aria-hidden="true"
 												style={{ fontSize: 28, padding: '0 5px' }}
 											/>
 										</a>
 									) : null}
-
-									{contact.twitter ? (
+									{contact.slack ? (
 										<a
-											href={contact.twitter}
+											href={contact.slack}
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{ color: '#777' }}
 										>
 											<i
-												className="fa fa-twitter"
-												aria-hidden="true"
-												style={{ fontSize: 28, padding: '0 5px' }}
-											/>
-										</a>
-									) : null}
-									{contact.instagram ? (
-										<a
-											href={contact.instagram}
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{ color: '#777' }}
-										>
-											<i
-												className="fa fa-instagram"
+												className="fa fa-slack"
 												aria-hidden="true"
 												style={{ fontSize: 28, padding: '0 5px' }}
 											/>

@@ -33,7 +33,7 @@ export default class Mission extends Component {
 								>
 									<div className="skill">
 										<div className="skill-bottom">
-											<i className="fa fa-font" style={{ color: '#f18b6d' }} />
+											<i className="fa fa-font" style={{ color: '#f18b6d', fontSize: 18 }} />
 											<span style={{ color: '#f18b6d', fontWeight: 600, fontSize: 18 }}>
 												{missions[0].content}
 											</span>
@@ -46,7 +46,7 @@ export default class Mission extends Component {
 								>
 									<div className="skill">
 										<div className="skill-bottom">
-											<i className="fa fa-pencil" style={{ color: '#f1d204' }} />
+											<i className="fa fa-pencil" style={{ color: '#f1d204', fontSize: 18 }} />
 											<span style={{ color: '#f1d204', fontWeight: 600, fontSize: 18 }}>
 												{missions[1].content}
 											</span>
@@ -59,7 +59,7 @@ export default class Mission extends Component {
 								>
 									<div className="skill">
 										<div className="skill-bottom">
-											<i className="fa fa-code" style={{ color: '#6a4d8a' }} />
+											<i className="fa fa-code" style={{ color: '#6a4d8a', fontSize: 18 }} />
 											<span style={{ color: '#6a4d8a', fontWeight: 600, fontSize: 18 }}>
 												{missions[2].content}
 											</span>
@@ -73,7 +73,7 @@ export default class Mission extends Component {
 								>
 									<div className="skill">
 										<div className="skill-bottom">
-											<i className="fa fa-codepen" style={{ color: '#116611' }} />
+											<i className="fa fa-codepen" style={{ color: '#116611', fontSize: 18 }} />
 											<span style={{ color: '#116611', fontWeight: 600, fontSize: 18 }}>
 												{missions[3].content}
 											</span>

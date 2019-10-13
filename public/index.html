@@ -168,9 +168,9 @@
   <link rel='stylesheet' id='illdy-pace-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/pace.min.css?ver=5.2.3' type='text/css' media='all' />
   <link crossorigin="anonymous" rel='stylesheet' id='illdy-google-fonts-css'
     href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700' type='text/css' media='all' />
-  <link rel='stylesheet' id='bootstrap-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
-  <link rel='stylesheet' id='bootstrap-theme-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap-theme.min.css?ver=3.3.6' type='text/css'
-    media='all' />
+  <!-- <link rel='stylesheet' id='bootstrap-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap.min.css?ver=4.2.1' type='text/css' media='all' /> -->
+  <!-- <link rel='stylesheet' id='bootstrap-theme-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/bootstrap-theme.min.css?ver=4.2.1' type='text/css'
+    media='all' /> -->
   <link rel='stylesheet' id='font-awesome-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/font-awesome.min.css?ver=4.5.0' type='text/css' media='all' />
   <link rel='stylesheet' id='owl-carousel-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/owl-carousel.min.css?ver=2.0.0' type='text/css' media='all' />
   <link rel='stylesheet' id='illdy-main-css' href='https://colorlib.com/illdy/wp-content/themes/illdy/layout/css/main.css?ver=5.2.3' type='text/css' media='all' />
@@ -216,7 +216,7 @@
     }
   </style>
   <meta name="onesignal" content="wordpress-plugin" />
-  <link rel="manifest" href="https://colorlib.com/illdy/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=" />
+  <!-- <link rel="manifest" href="https://colorlib.com/illdy/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=" /> -->
   <style type="text/css" id="illdy-about-section-css">
     #header.header-front-page .bottom-header .header-button-one {
       background-color: rgba(0, 0, 0, .2);
@@ -240,7 +240,7 @@
   <style type="text/css" id="illdy-about-section-css"></style>
   <style type="text/css" id="illdy-projects-section-css">
     #projects:before {
-      background-image: url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png) !important;
+      background: #fff !important;
     }
 
     #projects:before {
@@ -251,7 +251,6 @@
       background-repeat: repeat !important;
     }
   </style>
-  <style type="text/css" id="illdy-services-section-css"></style>
   <style type="text/css" id="illdy-team-section-css">
     #team:before {
       background-image: url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png) !important;
@@ -265,13 +264,26 @@
       background-repeat: repeat !important;
     }
   </style>
-  <style type="text/css" id="illdy-testimonials-section-css">
-    #testimonials:before {
-      background-image: url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/testiomnials-background.jpg) !important;
+  <style type="text/css">
+    .carousel {
+      height: 93vh !important;
     }
 
-    #testimonials:before {
-      background-attachment: scroll !important;
+    @media screen and (max-width: 944px) {
+      .carousel {
+      height: auto !important;
+    }
+    }
+
+    @media screen and (max-width: 576px) {
+      #logo {
+        width: auto;
+      }
+
+      #mynav {
+        position: absolute;
+        right: 0;
+      }
     }
   </style>
 </head>
@@ -285,7 +297,7 @@
   <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
   <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
   <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.11.4'></script>
-  <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-content/themes/illdy/layout/js/bootstrap/bootstrap.min.js?ver=3.3.6'></script>
+  <!-- <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-content/themes/illdy/layout/js/bootstrap/bootstrap.min.js?ver=4.2.1'></script> -->
   <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-content/themes/illdy/layout/js/owl-carousel/owl-carousel.min.js?ver=2.0.0'></script>
   <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-content/themes/illdy/layout/js/count-to/count-to.min.js?ver=5.2.3'></script>
   <script type="7c9f3919ed053259caa05d0a-text/javascript" src='https://colorlib.com/illdy/wp-content/themes/illdy/layout/js/visible/visible.min.js?ver=5.2.3'></script>
