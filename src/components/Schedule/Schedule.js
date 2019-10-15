@@ -17,12 +17,12 @@ export default class Schedule extends Component {
 		// return meetings.map((meeting: any) => <Meeting key={meeting.id} meeting={meeting} />);
 		const { showmore } = this.state;
 		const { meetings } = this.props;
-		if (meetings.length > 6) {
+		if (meetings.length > 4) {
 			return (
 				<div className="row">
 					{meetings.map((meeting, i) => {
 						if (!showmore) {
-							if (i < 6) {
+							if (i < 4) {
 								return <Meeting key={meeting.id} meeting={meeting} />;
 							}
 							return null;

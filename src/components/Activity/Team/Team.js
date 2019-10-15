@@ -14,12 +14,12 @@ export default class Team extends Component {
 	renderTeamMems() {
 		const { showmore } = this.state;
 		const { teammems } = this.props;
-		if (teammems.length > 21) {
+		if (teammems.length > 3) {
 			return (
 				<div className="row inline-columns">
 					{teammems.map((mem, i) => {
 						if (!showmore) {
-							if (i < 21) {
+							if (i < 3) {
 								return <TeamMem key={mem.id} mem={mem} />;
 							}
 							return null;
