@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Mission from './components/Mission/Mission';
-import Activity from './components/Activity/Activity';
+import Schedules from './components/Activity/Schedules/Schedules';
+import Banner from './components/Banner/Banner';
+import Team from './components/Team/Team';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
 		<div>
 			<Header />
 			<Mission />
-			<Activity />
+			<Schedules />
+			<Banner />
+			<Team />
 			<Footer />
 		</div>
 	);

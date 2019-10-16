@@ -14,34 +14,34 @@ const toDateString = (date) => {
 	return datestring;
 };
 
-const Meeting = (props) => {
-	const { meeting } = props;
+const Schedule = (props) => {
+	const { schedule } = props;
 	return (
 		<div className="col-lg-6 col-md-6 col-sm-6">
 			<div className="single-feature d-flex flex-row pb-30">
 				<div className={styles.icon}>
 					{/* lnr-cloud-upload */}
-					<i className={meeting.date.getTime() < Date.now() ? 'fa fa-cloud-upload' : 'fa fa-rocket'} />
+					<i className={schedule.date.getTime() < Date.now() ? 'fa fa-cloud-upload' : 'fa fa-rocket'} />
 				</div>
 				<div>
 					<h4 className={styles.topic}>
-						{toDateString(meeting.date)}
+						{toDateString(schedule.date)}
 						{': '}
-						{meeting.link ? (
+						{schedule.link ? (
 							<a
-								href={meeting.link}
+								href={schedule.link}
 								target="_blank"
 								rel="noopener noreferrer"
 								style={{ color: 'rgb(241, 139, 109)' }}
 							>
-								{meeting.topic}
+								{schedule.topic}
 							</a>
 						) : (
-							<span style={{ color: 'rgb(241, 139, 109)' }}>{meeting.topic}</span>
+							<span style={{ color: 'rgb(241, 139, 109)' }}>{schedule.topic}</span>
 						)}
 					</h4>
 					<p style={{ textAlign: 'left', fontSize: 14, color: '#777' }}>
-						{meeting.description} <span style={{ color: 'rgb(241, 139, 109)' }}>{meeting.location}</span>
+						{schedule.description} <span style={{ color: 'rgb(241, 139, 109)' }}>{schedule.location}</span>
 					</p>
 				</div>
 			</div>
@@ -49,4 +49,4 @@ const Meeting = (props) => {
 	);
 };
 
-export default Meeting;
+export default Schedule;

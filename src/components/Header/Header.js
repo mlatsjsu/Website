@@ -32,7 +32,7 @@ export default class Header extends Component {
 						infiniteLoop
 					>
 						{images.map((img, i) => (
-							<div>
+							<div key={img.id}>
 								<img src={img.image.url} alt={`carousel${i}`} />
 							</div>
 						))}
