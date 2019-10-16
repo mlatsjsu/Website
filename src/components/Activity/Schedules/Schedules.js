@@ -37,15 +37,13 @@ export default class Schedules extends Component {
 	};
 
 	renderSchedules() {
-		// return schedule.map((schedule: any) => <Schedule key={schedule.id} schedule={schedule} />);
 		const { schedules, showmore } = this.state;
-		console.log(schedules);
-		if (schedules.length > 4) {
+		if (schedules.length > 6) {
 			return (
 				<div className="row">
 					{schedules.map((schedule, i) => {
 						if (!showmore) {
-							if (i < 4) {
+							if (i < 6) {
 								return <Schedule key={schedule.id} schedule={schedule} />;
 							}
 							return null;

@@ -11,8 +11,8 @@ function App() {
 		<div>
 			<Header />
 			<Mission />
-			<Schedules />
 			<Banner />
+			<Schedules />
 			<Team />
 			<Footer />
 		</div>
