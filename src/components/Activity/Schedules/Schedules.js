@@ -16,7 +16,7 @@ export default class Schedules extends Component {
 			link: meeting.link ? meeting.link : ''
 		}));
 		const sortedSchedules = convertedSchedules.sort((a, b) => a.date.getTime() - b.date.getTime()).reverse();
-		this.setState({ schedules: sortedSchedules }, () => console.log(this.state.schedules));
+		this.setState({ schedules: sortedSchedules });
 	}
 
 	_convertUTCDateToLocalDate = (datestring) => {
