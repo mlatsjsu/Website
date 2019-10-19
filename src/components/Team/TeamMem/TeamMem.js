@@ -20,9 +20,15 @@ const TeamMem = (props) => {
 				</div>
 				<div className="person-content">
 					<h5 style={{ fontWeight: 700 }}>{mem.name}</h5>
-					<p className="person-position" style={{ color: 'rgb(241, 139, 109)', fontSize: 14 }}>
+					<p className="person-position" style={{ color: 'rgb(241, 139, 109)', fontSize: 14, margin: 0 }}>
 						{mem.title}
 					</p>
+					<a href={mem.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#0e76a8', fontSize: 20 }}>
+						<i className="fa fa-linkedin" aria-hidden="true" style={{ marginRight: 12 }} />
+					</a>
+					<a href={mem.github} target="_blank" rel="noopener noreferrer" style={{ color: '#333', fontSize: 20 }}>
+						<i className="fa fa-github" aria-hidden="true" />
+					</a>
 				</div>
 			</div>
 		</div>

@@ -57,6 +57,20 @@ export default class Footer extends Component {
 											/>
 										</a>
 									) : null}
+									{contact.youtube ? (
+										<a
+											href={contact.youtube}
+											target="_blank"
+											rel="noopener noreferrer"
+											style={{ color: '#777' }}
+										>
+											<i
+												className="fa fa-youtube-play"
+												aria-hidden="true"
+												style={{ fontSize: 28, padding: '0 5px' }}
+											/>
+										</a>
+									) : null}
 								</div>
 							</div>
 						</div>
