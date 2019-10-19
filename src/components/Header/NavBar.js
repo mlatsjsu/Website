@@ -39,6 +39,12 @@ const NavBar = () => {
 										<AnchorLink href="#team">Our Team</AnchorLink>
 									</li>
 									<li
+										id="menu-item-16"
+										className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-16"
+									>
+										<AnchorLink href="#get-involved">Get Involved</AnchorLink>
+									</li>
+									<li
 										id="menu-item-20"
 										className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-20"
 									>

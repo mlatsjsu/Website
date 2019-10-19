@@ -7,9 +7,10 @@ export default class Team extends Component {
 	async componentDidMount() {
 		const teammemRes = await fetch('https://sjsuml-cms.herokuapp.com/teammems');
 		const teammems = await teammemRes.json();
-		this.setState({ teammems });
+		const teammemSorted = teammems.sort((a, b) => a.order - b.order);
+		this.setState({ teammems: teammemSorted });
 	}
-	
+
 	renderTeamMems() {
 		const { teammems } = this.state;
 		return <div className="row inline-columns">{teammems.map((mem) => <TeamMem key={mem.id} mem={mem} />)}</div>;
@@ -28,13 +29,13 @@ export default class Team extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-sm-12">
-									<h3 className="title">Team</h3>
+									<h3 className="title">Offcial Team Members</h3>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div className="section-content">
-						<div className="container">{teammems.length ? this.renderTeamMems() : null}</div>
+						<div className="container">{this.renderTeamMems()}</div>
 					</div>
 				</section>
 			);
