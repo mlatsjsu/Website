@@ -61,8 +61,7 @@ export default class GetInvolved extends Component {
 						padding: '65px 0 0',
 						textAlign: 'center',
 						paddingBottom: 40,
-						backgroundImage:
-							'url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png)'
+						background: '#fff'
 					}}
 				>
 					<div className="section-header" style={{ marginBottom: 55 }}>
