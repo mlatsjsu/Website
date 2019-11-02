@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import { SLACKAPIKEY } from '../../config/apiKey';
 
 export default class GetInvolved extends Component {
 	state = { rules: [], numberOfUsers: 0, slack: '' };
 	async componentDidMount() {
 		const [ ruleRes, userRes, slackRes ] = await Promise.all([
 			fetch('https://sjsuml-cms.herokuapp.com/getinvolveds'),
-			fetch(
-				'https://slack.com/api/users.list?token=xoxp-569486228258-743096197234-821163408583-5e968754bdd160cb0424e1441276629e&include_locale=true&pretty=1'
-			),
+			fetch(`https://slack.com/api/users.list?token=${SLACKAPIKEY}&include_locale=true&pretty=1`),
 			fetch('https://sjsuml-cms.herokuapp.com/contacts')
 		]);
 
