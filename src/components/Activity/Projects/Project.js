@@ -14,15 +14,17 @@ const Project = (props) => {
 					<p className="card-text" style={{ fontSize: 14 }}>
 						{project.description}
 					</p>
-					<a
-						href={project.link}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="btn"
-						style={{ border: '2px solid #f18b6d', color: '#f18b6d', fontSize: 14, fontWeight: 500 }}
-					>
-						View On Github
-					</a>
+					{project.link ? (
+						<a
+							href={project.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="btn"
+							style={{ border: '2px solid #f18b6d', color: '#f18b6d', fontSize: 14, fontWeight: 500 }}
+						>
+							View On Github
+						</a>
+					) : null}
 				</div>
 			</div>
 		</div>
