@@ -1,39 +1,28 @@
 import React from 'react';
 
 const Project = (props) => {
-	const { project, index } = props;
+	const { project } = props;
 	return (
-		<div key={project.id} className="col-sm-6 col-lg-6">
-			<div className="single-feature d-flex flex-row pb-30">
-				<div className="icon">
-					<i
-						className={index % 2 === 0 ? 'fa fa-bar-chart' : 'fa fa-tasks'}
-						style={{ color: '#f18b6d', fontSize: 18, marginRight: 12 }}
-					/>
-				</div>
-				<div className="desc">
-					{project.link ? (
-						<a
-							href={project.link}
-							className="text-uppercase"
-							target="_blank"
-							rel="noopener noreferrer"
-							style={{ textDecoration: 'none' }}
-						>
-							<h4 className="text-uppercase" style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}>
-								{project.name}
-							</h4>
-						</a>
-					) : (
-						<h4 className="text-uppercase" style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}>
-							{project.name}
-						</h4>
-					)}
-					{/* <h4 className="text-uppercase" style={{ color: '#f18b6d', fontWeight: 600, fontSize: 22 }}>
-						{project.name}
-					</h4> */}
-
-					<p style={{ textAlign: 'left', fontSize: 14, color: '#777' }}>{project.description}</p>
+		<div className="col-sm-3 col-lg-3" style={{ marginTop: 30 }}>
+			<div className="card">
+				<img src={project.picture.url} className="card-img-top" alt="..." />
+				<div className="card-body" style={{ textAlign: 'left' }}>
+					<h5 className="card-title">{project.title}</h5>
+					<p className="card-text" style={{ fontSize: 14 }}>
+						<span style={{ fontWeight: 700 }}>Members:</span> {project.members}
+					</p>
+					<p className="card-text" style={{ fontSize: 14 }}>
+						{project.description}
+					</p>
+					<a
+						href={project.link}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="btn"
+						style={{ border: '2px solid #f18b6d', color: '#f18b6d', fontSize: 14, fontWeight: 500 }}
+					>
+						View On Github
+					</a>
 				</div>
 			</div>
 		</div>
