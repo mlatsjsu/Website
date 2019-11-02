@@ -27,6 +27,9 @@ const Schedule = (props) => {
 					<h4 className={styles.topic}>
 						{toDateString(schedule.date)}
 						{': '}
+						<span style={{ color: 'rgb(241, 139, 109)' }}>{schedule.topic}</span>
+					</h4>
+					<p style={{ textAlign: 'left', fontSize: 14, color: '#777' }}>
 						{schedule.link ? (
 							<a
 								href={schedule.link}
@@ -34,13 +37,10 @@ const Schedule = (props) => {
 								rel="noopener noreferrer"
 								style={{ color: 'rgb(241, 139, 109)' }}
 							>
-								{schedule.topic}
+								Resources
+								<br />
 							</a>
-						) : (
-							<span style={{ color: 'rgb(241, 139, 109)' }}>{schedule.topic}</span>
-						)}
-					</h4>
-					<p style={{ textAlign: 'left', fontSize: 14, color: '#777' }}>
+						) : null}
 						{schedule.description} <span style={{ color: 'rgb(241, 139, 109)' }}>{schedule.location}</span>
 					</p>
 				</div>
