@@ -8,6 +8,7 @@ export default class Team extends Component {
 		const teammemRes = await fetch('https://sjsuml-cms.herokuapp.com/teammems');
 		const teammems = await teammemRes.json();
 		const teammemSorted = teammems.sort((a, b) => a.order - b.order);
+
 		this.setState({ teammems: teammemSorted });
 	}
 
@@ -29,7 +30,7 @@ export default class Team extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-sm-12">
-									<h3 className="title">Offcial Team Members</h3>
+									<h3 className="title">Official Team Members</h3>
 								</div>
 							</div>
 						</div>

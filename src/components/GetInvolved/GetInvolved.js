@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 
 export default class GetInvolved extends Component {
-	state = { rules: [] };
+	state = { rules: [], numberOfUsers: 0, slack: '' };
 	async componentDidMount() {
-		const ruleRes = await fetch('https://sjsuml-cms.herokuapp.com/getinvolveds');
-		const rules = await ruleRes.json();
+		const [ ruleRes, userRes, slackRes ] = await Promise.all([
+			fetch('https://sjsuml-cms.herokuapp.com/getinvolveds'),
+			fetch(
+				`https://slack.com/api/users.list?token=${process.env.REACT_APP_API_KEY}&include_locale=true&pretty=1`
+			),
+			fetch('https://sjsuml-cms.herokuapp.com/contacts')
+		]);
+
+		const [ rules, user, slack ] = await Promise.all([ ruleRes.json(), userRes.json(), slackRes.json() ]);
+
 		const ruleSorted = rules.sort((a, b) => a.order - b.order);
-		this.setState({ rules: ruleSorted });
+		this.setState({ rules: ruleSorted, numberOfUsers: user.members.length - 8, slack: slack[0].slack });
 	}
 
 	renderRules = () => {
@@ -42,7 +50,7 @@ export default class GetInvolved extends Component {
 	};
 
 	render() {
-		const { rules } = this.state;
+		const { rules, numberOfUsers, slack } = this.state;
 		if (rules.length) {
 			return (
 				<section
@@ -63,15 +71,20 @@ export default class GetInvolved extends Component {
 								<div className="col-sm-12">
 									<h3 className="title">Get Involved</h3>
 									<h5 style={{ fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
-										First, make sure to join our 
-										<a href="sjsumlclub.slack.com/signup">Slack group </a> 
-										for notifications about upcoming events!
-										<br/>
-										Our meetings will always be open to all SJSU students. 
-										However, as an official member, you get extra benefits 
-										such as getting featured on our website, priority for 
-										RSVP events, and club funding for projects. 
-										Complete at least one item below per semester for official membership:
+										First, join our {' '}
+										<a href={slack} target="_blank" rel="noopener noreferrer">
+											Slack group{' '}
+										</a>
+										to access our supportive community of{' '}
+										<span style={{ color: '#f18b6d', fontSize: 22 }}>{numberOfUsers}</span> machine
+										learning enthusiasts! This is the best way to get notifications for upcoming
+										events.
+										<br />
+										<br />
+										Our meetings will always be open to all SJSU students. However, as an official
+										member, you get extra benefits such as getting featured on our website, priority
+										for RSVP events, and club funding for projects. Complete at least one item below
+										per semester for official membership:
 									</h5>
 								</div>
 							</div>
