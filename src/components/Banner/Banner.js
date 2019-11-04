@@ -40,7 +40,7 @@ const Banner = () => (
         data-speed="2000"
         data-refresh-interval="100"
       /> */}
-					<span className="counter-description">PROJECTS</span>
+					<span className="counter-description">PROJECTS AND PRESENTATIONS</span>
 				</div>
 			</div>
 		</div>
