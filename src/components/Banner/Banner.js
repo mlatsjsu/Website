@@ -20,7 +20,7 @@ const Banner = () => (
         data-speed="1000"
         data-refresh-interval="100"
       /> */}
-					<span className="counter-description">WORKSHOPS</span>
+					<span className="counter-description">HANDS-ON WORKSHOPS</span>
 				</div>
 				<div id="illdy_counter-3" className="col-sm-4 col-xs-12 widget_illdy_counter">
 					{/* <span
@@ -40,7 +40,7 @@ const Banner = () => (
         data-speed="2000"
         data-refresh-interval="100"
       /> */}
-					<span className="counter-description">PROJECTS AND PRESENTATIONS</span>
+					<span className="counter-description">PROJECTS &amp; PRESENTATIONS</span>
 				</div>
 			</div>
 		</div>
