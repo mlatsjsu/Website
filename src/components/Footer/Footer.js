@@ -45,7 +45,7 @@ export default class Footer extends Component {
 									) : null}
 									{contact.slack ? (
 										<a
-											href={contact.slack}
+											href={contact.slack + "/signup"}
 											target="_blank"
 											rel="noopener noreferrer"
 											style={{ color: '#777' }}
