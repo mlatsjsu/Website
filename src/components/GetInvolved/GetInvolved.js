@@ -71,7 +71,7 @@ export default class GetInvolved extends Component {
 									<h3 className="title">Get Involved</h3>
 									<h5 style={{ fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
 										First, join our {' '}
-										<a href={slack} target="_blank" rel="noopener noreferrer">
+										<a href="https://sjsumlclub.slack.com/signup" target="_blank" rel="noopener noreferrer">
 											Slack group{' '}
 										</a>
 										to access our supportive community of{' '}
