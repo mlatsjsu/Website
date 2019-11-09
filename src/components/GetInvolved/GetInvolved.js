@@ -74,9 +74,9 @@ export default class GetInvolved extends Component {
 										with us. We strongly value everyone&rsquo;s contribution in our community.
 										<br />
 										<br />
-										First, join our {' '}
+										First, {' '}
 										<a href={slack + "/signup"} target="_blank" rel="noopener noreferrer">
-											Slack group{' '}
+											join us on Slack {' '}
 										</a>
 										to access our supportive community of{' '}
 										<span style={{ color: '#f18b6d', fontSize: 22 }}>{numberOfUsers}</span> machine 
