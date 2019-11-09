@@ -64,7 +64,7 @@ export default class GetInvolved extends Component {
 						background: '#fff'
 					}}
 				>
-					<div className="section-header" style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', marginBottom: 55 }}>
+					<div className="section-header" style={{ maxWidth: '850px', marginLeft: 'auto', marginRight: 'auto', marginBottom: 55 }}>
 						<div className="container">
 							<div className="row">
 								<div className="col-sm-12">
@@ -93,7 +93,7 @@ export default class GetInvolved extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="section-content" style = {{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+					<div className="section-content" style={{ maxWidth: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
 						<div className="container">{this.renderRules()}</div>
 					</div>
 				</section>
