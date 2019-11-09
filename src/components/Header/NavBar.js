@@ -21,12 +21,6 @@ const NavBar = () => {
 										<AnchorLink href="#about">Mission</AnchorLink>
 									</li>
 									<li
-										id="menu-item-17"
-										className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17"
-									>
-										<AnchorLink href="#projects">Projects</AnchorLink>
-									</li>
-									<li
 										id="menu-item-18"
 										className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18"
 									>
@@ -37,6 +31,12 @@ const NavBar = () => {
 										className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"
 									>
 										<AnchorLink href="#team">Our Team</AnchorLink>
+									</li>
+									<li
+										id="menu-item-17"
+										className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17"
+									>
+										<AnchorLink href="#projects">Projects</AnchorLink>
 									</li>
 									<li
 										id="menu-item-16"
