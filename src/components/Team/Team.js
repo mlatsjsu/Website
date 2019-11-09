@@ -30,9 +30,9 @@ export default class Team extends Component {
 					<div className="section-header" style={{ marginBottom: 55 }}>
 						<div className="container">
 							<div className="row">
-								<div className="col-sm-12">
+								<div className="col-sm-12" style={{ maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
 									<h3 className="title">Official Team Members</h3>
-									<p>Official members have demonstrated proven commitment to our community by completing one or more of our membership criteria.</p>
+									<p style={{ fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 18 }}>Official members have demonstrated proven commitment to our community by completing one or more of our membership criteria.</p>
 									<AnchorLink href="#get-involved">See how you can join our team below!</AnchorLink>
 								</div>
 							</div>
