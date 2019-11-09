@@ -32,7 +32,7 @@ export default class Team extends Component {
 							<div className="row">
 								<div className="col-sm-12">
 									<h3 className="title">Official Team Members</h3>
-									<p>Official team members have demonstrated proven commitment to our community.</p>
+									<p>Official members have demonstrated proven commitment to our community by completing one or more of our membership criteria.</p>
 									<AnchorLink href="#get-involved">See how you can join our team below!</AnchorLink>
 								</div>
 							</div>
