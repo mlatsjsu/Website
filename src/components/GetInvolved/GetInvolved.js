@@ -57,7 +57,7 @@ export default class GetInvolved extends Component {
 					id="get-involved"
 					className="front-page-section"
 					style={{
-						maxWidth: '75%',
+						width: '100%',
 						padding: '65px 0 0',
 						textAlign: 'center',
 						paddingBottom: 40,
@@ -69,7 +69,7 @@ export default class GetInvolved extends Component {
 							<div className="row">
 								<div className="col-sm-12">
 									<h3 className="title">Get Involved</h3>
-									<p style={{ fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
+									<p style={{ maxWidth: '75%', fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
 										No matter if you&rsquo;re a beginner, intermediate, or advanced, you have a place 
 										with us. We strongly value everyone&rsquo;s contribution in our community.
 										<br />
@@ -79,8 +79,8 @@ export default class GetInvolved extends Component {
 											Slack group{' '}
 										</a>
 										to access our supportive community of{' '}
-										<span style={{ color: '#f18b6d', fontSize: 22 }}>{numberOfUsers}</span>
-										machine learning enthusiasts! This is the best way to get notifications 
+										<span style={{ color: '#f18b6d', fontSize: 22 }}>{numberOfUsers}</span> machine 
+										learning enthusiasts! This is the best way to get notifications 
 										for upcoming events.
 										<br />
 										<br />
