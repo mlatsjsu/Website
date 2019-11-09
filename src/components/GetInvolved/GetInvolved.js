@@ -64,12 +64,12 @@ export default class GetInvolved extends Component {
 						background: '#fff'
 					}}
 				>
-					<div className="section-header" style={{ marginBottom: 55 }}>
+					<div className="section-header" style={{ maxWidth: '66%', margin: 0 auto, marginBottom: 55 }}>
 						<div className="container">
 							<div className="row">
 								<div className="col-sm-12">
 									<h3 className="title">Get Involved</h3>
-									<p style={{ maxWidth: '75%', fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
+									<p style={{ fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
 										No matter if you&rsquo;re a beginner, intermediate, or advanced, you have a place 
 										with us. We strongly value everyone&rsquo;s contribution in our community.
 										<br />
@@ -93,7 +93,7 @@ export default class GetInvolved extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="section-content">
+					<div className="section-content" style = {{ maxWidth: '66%', margin: 0 auto }}>
 						<div className="container">{this.renderRules()}</div>
 					</div>
 				</section>
