@@ -57,7 +57,7 @@ export default class GetInvolved extends Component {
 					id="get-involved"
 					className="front-page-section"
 					style={{
-						max-width: '75%',
+						maxWidth: '75%',
 						padding: '65px 0 0',
 						textAlign: 'center',
 						paddingBottom: 40,
