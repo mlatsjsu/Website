@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import TeamMem from './TeamMem/TeamMem';
 
 export default class Team extends Component {
@@ -31,6 +32,8 @@ export default class Team extends Component {
 							<div className="row">
 								<div className="col-sm-12">
 									<h3 className="title">Official Team Members</h3>
+									<p>Official team members have demonstrated proven commitment to our community.</p>
+									<AnchorLink href="#get-involved">See how you can join our team below!</AnchorLink>
 								</div>
 							</div>
 						</div>
