@@ -8,6 +8,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
+    "react-lazy-load-image-component": "^1.4.1",
     "react-responsive-carousel": "^3.1.50",
     "react-scripts": "3.1.2"
   },
