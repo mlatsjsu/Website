@@ -1,11 +1,12 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Project = (props) => {
 	const { project } = props;
 	return (
 		<div className="col-sm-3 col-lg-3" style={{ marginTop: 30 }}>
 			<div className="card">
-				<img src={project.picture.url} className="card-img-top" alt="..." />
+				<LazyLoadImage effect="blur" src={project.picture.url} className="card-img-top" alt="..." />
 				<div className="card-body" style={{ textAlign: 'left' }}>
 					<h5 className="card-title">{project.title}</h5>
 					<p className="card-text" style={{ fontSize: 14 }}>

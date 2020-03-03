@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import NavBar from './NavBar';
 
 export default class Header extends Component {
@@ -17,10 +18,6 @@ export default class Header extends Component {
 				<header
 					id="header"
 					className="header-front-page"
-					// style={{
-					// 	backgroundImage: `url(${images[0].image.url})`,
-					// 	backgroundAttachment: 'fixed'
-					// }}
 				>
 					<NavBar />
 					<Carousel
@@ -33,7 +30,11 @@ export default class Header extends Component {
 					>
 						{images.map((img, i) => (
 							<div key={img.id}>
-								<img src={img.image.url} alt={`carousel${i}`} />
+								<LazyLoadImage
+									effect="blur"
+									alt={`carousel${i}`}
+									src={img.image.url}
+								/>
 							</div>
 						))}
 					</Carousel>
