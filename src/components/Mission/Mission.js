@@ -14,7 +14,16 @@ export default class Mission extends Component {
 		const { missions } = this.state;
 		if (missions.length) {
 			return (
-				<section id="about" className="front-page-section">
+				<section
+					id="about"
+					className="front-page-section"
+					style={{
+						background:
+							this.props.order % 2 === 0
+								? 'url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png)'
+								: '#fff'
+					}}
+				>
 					<div className="section-header" style={{ marginBottom: 0 }}>
 						<div className="container">
 							<div className="row">
