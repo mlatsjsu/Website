@@ -26,8 +26,10 @@ export default class Projects extends React.Component {
 				style={{
 					paddingBottom: 40,
 					paddingTop: 65,
-					backgroundImage:
-						'url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png)'
+					background:
+						this.props.order % 2 === 0
+							? 'url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png)'
+							: '#fff'
 				}}
 			>
 				<div className="section-header" style={{ marginBottom: 55 }}>
