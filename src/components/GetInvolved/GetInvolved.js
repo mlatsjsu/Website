@@ -11,8 +11,8 @@ export default class GetInvolved extends Component {
 			fetch('https://sjsuml-cms.herokuapp.com/contacts')
 		]);
 
-		const [ rules, users, slack ] = await Promise.all([ ruleRes.json(), userRes.json(), slackRes.json() ]);
 
+    const [ rules, users, slack ] = await Promise.all([ ruleRes.json(), userRes.json(), slackRes.json() ]);
 		const ruleSorted = rules.sort((a, b) => a.order - b.order);
 		const filterUsers = users.members.filter(user => !user.is_bot);
 	
