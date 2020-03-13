@@ -11,9 +11,12 @@ export default class GetInvolved extends Component {
 			fetch('https://sjsuml-cms.herokuapp.com/contacts')
 		]);
 
-		const [ rules, user, slack ] = await Promise.all([ ruleRes.json(), userRes.json(), slackRes.json() ]);
+
+    const [ rules, users, slack ] = await Promise.all([ ruleRes.json(), userRes.json(), slackRes.json() ]);
 		const ruleSorted = rules.sort((a, b) => a.order - b.order);
-		this.setState({ rules: ruleSorted, numberOfUsers: user.members.length - 8, slack: slack[0].slack });
+		const filterUsers = users.members.filter(user => !user.is_bot);
+	
+		this.setState({ rules: ruleSorted, numberOfUsers: filterUsers.length, slack: slack[0].slack });
 	}
 
 	renderRules = () => {
@@ -60,27 +63,33 @@ export default class GetInvolved extends Component {
 						padding: '65px 0 0',
 						textAlign: 'center',
 						paddingBottom: 40,
-						background: '#fff'
+						background:
+							this.props.order % 2 === 0
+								? 'url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png)'
+								: '#fff'
 					}}
 				>
-					<div className="section-header" style={{ maxWidth: '850px', marginLeft: 'auto', marginRight: 'auto', marginBottom: 55 }}>
+					<div
+						className="section-header"
+						style={{ maxWidth: '850px', marginLeft: 'auto', marginRight: 'auto', marginBottom: 55 }}
+					>
 						<div className="container">
 							<div className="row">
 								<div className="col-sm-12">
 									<h3 className="title">Get Involved</h3>
 									<p style={{ fontSize: 16, color: 'rgb(119, 119, 119)', marginTop: 22 }}>
-										No matter if you&rsquo;re a beginner, intermediate, or advanced, you have a place 
-										with us. We strongly value everyone&rsquo;s contribution in our community.
+										No matter if you&rsquo;re a beginner, intermediate, or advanced, you have a
+										place with us. We strongly value everyone&rsquo;s contribution in our community.
 										<br />
 										<br />
 										First, {' '}
-										<a href={slack + "/signup"} target="_blank" rel="noopener noreferrer">
+										<a href={slack + '/signup'} target="_blank" rel="noopener noreferrer">
 											join us on Slack {' '}
 										</a>
 										to access our supportive community of{' '}
-										<span style={{ color: '#f18b6d', fontSize: 22 }}>{numberOfUsers}</span> machine 
-										learning enthusiasts! This is the best way to get notifications 
-										for upcoming events.
+										<span style={{ color: '#f18b6d', fontSize: 22 }}>{numberOfUsers}</span> machine
+										learning enthusiasts! This is the best way to get notifications for upcoming
+										events.
 										<br />
 										<br />
 										Our meetings will always be open to all SJSU affiliates. However, as an official
@@ -92,7 +101,10 @@ export default class GetInvolved extends Component {
 							</div>
 						</div>
 					</div>
-					<div className="section-content" style={{ maxWidth: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
+					<div
+						className="section-content"
+						style={{ maxWidth: '80%', marginLeft: 'auto', marginRight: 'auto' }}
+					>
 						<div className="container">{this.renderRules()}</div>
 					</div>
 				</section>

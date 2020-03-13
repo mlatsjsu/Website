@@ -1,11 +1,20 @@
 import React from 'react';
+import { LazyImage } from 'react-lazy-images';
 
 const Project = (props) => {
 	const { project } = props;
 	return (
 		<div className="col-sm-3 col-lg-3" style={{ marginTop: 30 }}>
 			<div className="card">
-				<img src={project.picture.url} className="card-img-top" alt="..." />
+				<LazyImage
+					src={project.picture.url}
+					className="card-img-top"
+					alt="project-img"
+					placeholder={({ imageProps, ref }) => (
+						<img ref={ref} src={project.picture.url} alt="project-img" style={{ width: '100%', height: '100%' }} />
+					)}
+					actual={({ imageProps }) => <img alt="project-img" {...imageProps} style={{ width: '100%', height: '100%' }} />}
+				/>
 				<div className="card-body" style={{ textAlign: 'left' }}>
 					<h5 className="card-title">{project.title}</h5>
 					<p className="card-text" style={{ fontSize: 14 }}>

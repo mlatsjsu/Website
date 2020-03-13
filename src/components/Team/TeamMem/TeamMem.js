@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyImage } from 'react-lazy-images';
 
 const TeamMem = (props) => {
 	const { mem } = props;
@@ -6,7 +7,7 @@ const TeamMem = (props) => {
 		<div id="illdy_person" className="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 widget_illdy_person">
 			<div className="person clearfix" data-person-color="#f18b6d">
 				<div className="person-image">
-					<img
+					<LazyImage
 						src={
 							mem.picture ? (
 								mem.picture.url
@@ -14,8 +15,22 @@ const TeamMem = (props) => {
 								'https://res.cloudinary.com/tintheanh/image/upload/v1569539394/dyweilfehllqbhq5ejsg.png'
 							)
 						}
-						alt={mem.name}
-						title={mem.name}
+						placeholder={({ imageProps, ref }) => (
+							<img
+								ref={ref}
+								src={
+									mem.picture ? (
+										mem.picture.url
+									) : (
+										'https://res.cloudinary.com/tintheanh/image/upload/v1569539394/dyweilfehllqbhq5ejsg.png'
+									)
+								}
+								alt="mem-img"
+								style={{ width: '100%' }}
+							/>
+						)}
+						actual={({ imageProps }) => <img alt="mem-img" {...imageProps} style={{ width: '100%' }} />}
+						alt="mem-img"
 					/>
 				</div>
 				<div className="person-content">

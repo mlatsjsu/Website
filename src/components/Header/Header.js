@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyImage } from 'react-lazy-images';
 import NavBar from './NavBar';
 
 export default class Header extends Component {
@@ -14,14 +16,7 @@ export default class Header extends Component {
 		const { images } = this.state;
 		if (images.length) {
 			return (
-				<header
-					id="header"
-					className="header-front-page"
-					// style={{
-					// 	backgroundImage: `url(${images[0].image.url})`,
-					// 	backgroundAttachment: 'fixed'
-					// }}
-				>
+				<header id="header" className="header-front-page">
 					<NavBar />
 					<Carousel
 						showThumbs={false}
@@ -33,7 +28,21 @@ export default class Header extends Component {
 					>
 						{images.map((img, i) => (
 							<div key={img.id}>
-								<img src={img.image.url} alt={`carousel${i}`} />
+								<LazyImage
+									src={img.image.url}
+									alt="carousel-img"
+									placeholder={({ imageProps, ref }) => (
+										<img
+											ref={ref}
+											src={img.image.url}
+											alt="carousel-img"
+											style={{ width: '100%' }}
+										/>
+									)}
+									actual={({ imageProps }) => (
+										<img alt="carousel-img" {...imageProps} style={{ width: '100%' }} />
+									)}
+								/>
 							</div>
 						))}
 					</Carousel>
