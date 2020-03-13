@@ -12,7 +12,6 @@ export default class GetInvolved extends Component {
 		]);
 
 		const [ rules, user, slack ] = await Promise.all([ ruleRes.json(), userRes.json(), slackRes.json() ]);
-
 		const ruleSorted = rules.sort((a, b) => a.order - b.order);
 		this.setState({ rules: ruleSorted, numberOfUsers: user.members.length - 8, slack: slack[0].slack });
 	}
