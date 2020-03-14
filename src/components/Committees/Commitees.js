@@ -1,5 +1,5 @@
 import React from 'react';
-import Committee from './Committee/Committee';
+import HoverCard from '../utils/HoverCard/HoverCard';
 
 class Committees extends React.Component {
 	state = { committees: [] };
@@ -26,19 +26,31 @@ class Committees extends React.Component {
 	}
 
 	renderCommittees = () => {
-		return this.state.committees.map((committee) => (
-			<Committee
-				key={committee.id}
-				background={
-					this.props.order % 2 === 0 ? (
-						'url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png)'
-					) : (
-						'#fff'
-					)
-				}
-				committee={committee}
-			/>
-		));
+		const chunks = this.chunk(this.state.committees, 3);
+		console.log(chunks);
+
+		// return 1;
+		return chunks.map((chunk, i) => {
+			return (
+				<div key={i} className="row" style={{ justifyContent: 'center' }}>
+					{chunk.map((committee) => (
+						<div className="col-sm-4" style={{ marginBottom: 28 }}>
+							<HoverCard key={committee.id} committee={committee} />
+						</div>
+					))}
+				</div>
+			);
+		});
+	};
+
+	chunk = (array, size) => {
+		const chunked_arr = [];
+		let index = 0;
+		while (index < array.length) {
+			chunked_arr.push(array.slice(index, size + index));
+			index += size;
+		}
+		return chunked_arr;
 	};
 
 	render() {
@@ -107,7 +119,9 @@ class Committees extends React.Component {
 						</div>
 					</div>
 					<div className="section-content">
-						<div className="container">{this.renderCommittees()}</div>
+						<div className="container" style={{ maxWidth: 1280 }}>
+							{this.renderCommittees()}
+						</div>
 					</div>
 				</section>
 			);

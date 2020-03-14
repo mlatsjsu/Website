@@ -10,9 +10,9 @@ export default class Team extends Component {
 		const teammems = await teammemRes.json();
 		const teammemSorted = teammems.sort((a, b) => a.order - b.order);
 
-		const teammemsWithNoCommittee = teammemSorted.filter((mem) => !mem.committees.length && !mem.leadCommittee);
+		// const teammemsWithNoCommittee = teammemSorted.filter((mem) => !mem.committees.length && !mem.leadCommittee);
 
-		this.setState({ teammems: teammemsWithNoCommittee });
+		this.setState({ teammems: teammemSorted });
 	}
 
 	renderTeamMems() {

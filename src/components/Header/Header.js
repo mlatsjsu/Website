@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { LazyImage } from 'react-lazy-images';
 import NavBar from './NavBar';
 
