@@ -21,7 +21,7 @@ const App = () => (
 			/>
 			<meta
 				name="keywords"
-				content="Machine Learning,SJSU,SJSU Machine Learning,ML@SJSU,Artificial Intelligence,Natural Language Processing,NLP,Computer Vision,Neural Networks,Deep Learning,Big Data,Science,STEM,Diversity"
+				content="Machine Learning,SJSU,SJSU Machine Learning,ML@SJSU,AI,Artificial Intelligence,Natural Language Processing,NLP,Computer Vision,Neural Networks,Deep Learning,Big Data,Science,STEM,Diversity"
 			/>
 			<meta property="og:locale" content="en_US" />
 			<meta property="og:type" content="website" />
