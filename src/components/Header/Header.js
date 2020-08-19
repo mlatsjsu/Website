@@ -37,6 +37,9 @@ export default class Header extends Component {
 							</div>
 						))}
 					</Carousel>
+					<div style={{ position: 'absolute', height:'60px', color:'white',opacity:0.9, backgroundColor: '#000000'}}>
+						<p>We are ML@SJSU, a Recognized Student Organization at San Jose State University! Our community provides an interactive, hands-on environment to support growth in artificial intelligence and machine learning. Come join us on Fridays from 4-6pm in MacQuarrie Hall 226. All are welcome!</p>
+					</div>
 				</header>
 			);
 		}

@@ -5,14 +5,14 @@ import logo from './logo.svg';
 const NavBar = () => {
 	return (
 		<div>
-			<div className="top-header" style={{ position: 'absolute', top: 0 }}>
+			<div className="top-header" style={{ position: 'absolute', top: 0 , background:"#000000", opacity:0.6, height:'120px'}}>
 				<div className="container">
 					<div className="row">
-						<div id="logo" className="col-sm-4 col-xs-8" style={{ marginTop: 20 }}>
+						<div id="logo" className="col-sm-4 col-xs-8" style={{ marginTop: 10}}>
 							<img src={logo} alt="logo" height="66" />
 						</div>
 						<div id="mynav" className="col-sm-8 col-xs-4">
-							<nav className="header-navigation">
+							<nav className="header-navigation" >
 								<ul id="menu-illdy-main" className="clearfix">
 									<li
 										id="menu-item-16"
@@ -58,6 +58,7 @@ const NavBar = () => {
 						</div>
 					</div>
 				</div>
+				
 			</div>
 			<nav className="responsive-menu">
 				<ul>
