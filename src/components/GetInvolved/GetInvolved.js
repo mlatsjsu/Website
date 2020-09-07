@@ -6,7 +6,7 @@ export default class GetInvolved extends Component {
 		const [ ruleRes, userRes, slackRes ] = await Promise.all([
 			fetch('https://sjsuml-cms.herokuapp.com/getinvolveds'),
 			fetch(
-				`https://slack.com/api/users.list?token=${process.env.REACT_APP_API_KEY}&include_locale=true&pretty=1`
+				`https://slack.com/api/users.list?token=${process.env.SLACK_API_KEY}&include_locale=true&pretty=1`
 			),
 			fetch('https://sjsuml-cms.herokuapp.com/contacts')
 		]);
