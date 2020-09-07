@@ -27,7 +27,6 @@ class Committees extends React.Component {
 
 	renderCommittees = () => {
 		const chunks = this.chunk(this.state.committees, 3);
-		console.log(chunks);
 
 		// return 1;
 		return chunks.map((chunk, i) => {
