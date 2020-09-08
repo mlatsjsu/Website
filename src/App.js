@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-
 import { Helmet } from 'react-helmet';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import thumbnail from './static_images/thumbnail.png';
-
-import Header from './components/Header/Header';
-import Mission from './components/Mission/Mission';
-import Schedules from './components/Schedules/Schedules';
-import Projects from './components/Projects/Projects';
-import Banner from './components/Banner/Banner';
-import Committees from './components/Committees/Commitees';
-import Team from './components/Team/Team';
-import GetInvolved from './components/GetInvolved/GetInvolved';
-import Footer from './components/Footer/Footer';
-
+import { HomePage, AlumniPage, NotFound } from './pages';
+import { Footer } from './components';
 import { url } from './url';
 
 class App extends Component {
@@ -23,6 +14,7 @@ class App extends Component {
       schedules: [],
       committees: [],
       teammems: [],
+      alumni: [],
       projects: [],
       rules: [],
       numberOfUsers: 0,
@@ -42,6 +34,7 @@ class App extends Component {
         schedulesRes,
         committeesRes,
         teammemsRes,
+        alumniRes,
         projectsRes,
         rulesRes,
         usersRes,
@@ -52,6 +45,7 @@ class App extends Component {
         fetch(url.schedules),
         fetch(url.committees),
         fetch(url.teammems),
+        fetch(url.alumni),
         fetch(url.projects),
         fetch(url.rules),
         fetch(url.slack),
@@ -64,6 +58,7 @@ class App extends Component {
         schedules,
         committees,
         teammems,
+        alumni,
         projects,
         rules,
         users,
@@ -74,6 +69,7 @@ class App extends Component {
         schedulesRes.json(),
         committeesRes.json(),
         teammemsRes.json(),
+        alumniRes.json(),
         projectsRes.json(),
         rulesRes.json(),
         usersRes.json(),
@@ -107,6 +103,8 @@ class App extends Component {
 
       teammems.sort((a, b) => a.order - b.order);
 
+      alumni.sort((a, b) => a.order - b.order);
+
       projects.sort((a, b) => a.order - b.order);
 
       rules.sort((a, b) => a.order - b.order);
@@ -120,6 +118,7 @@ class App extends Component {
         schedules: convertedSchedules,
         committees: processedCommittees,
         teammems,
+        alumni,
         projects,
         rules,
         numberOfUsers: filterUsers.length,
@@ -181,47 +180,51 @@ class App extends Component {
 
   render() {
     const { appState, isLoadedAll } = this.state;
-    const {
-      carousels,
-      missions,
-      schedules,
-      committees,
-      teammems,
-      projects,
-      rules,
-      numberOfUsers,
-      slack,
-      email,
-      linkedin,
-      youtube,
-    } = appState;
+    const { slack, email, linkedin, youtube } = appState;
+
+    const homeState = {
+      carousels: appState.carousels,
+      missions: appState.missions,
+      schedules: appState.schedules,
+      committees: appState.committees,
+      teammems: appState.teammems,
+      projects: appState.projects,
+      rules: appState.rules,
+      numberOfUsers: appState.numberOfUsers,
+    };
+
+    const alumniState = {
+      carousels: appState.carousels,
+      alumni: appState.alumni,
+    };
 
     if (!isLoadedAll) {
       return null;
     }
 
     return (
-      <div>
-        {this.renderHelMet()}
-        <Header carousels={carousels} />
-        <Mission missions={missions} />
-        <Banner />
-        <Schedules schedules={schedules} />
-        <Committees committees={committees} />
-        <Team teammems={teammems} />
-        <Projects projects={projects} />
-        <GetInvolved
-          rules={rules}
-          numberOfUsers={numberOfUsers}
-          slack={slack}
-        />
-        <Footer
-          email={email}
-          slack={slack}
-          linkedin={linkedin}
-          youtube={youtube}
-        />
-      </div>
+      <Router>
+        <div>
+          {this.renderHelMet()}
+          <Switch>
+            <Route exact path="/">
+              <HomePage pageState={homeState} />
+            </Route>
+            <Route exact path="/alumni">
+              <AlumniPage pageState={alumniState} />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+          <Footer
+            email={email}
+            slack={slack}
+            linkedin={linkedin}
+            youtube={youtube}
+          />
+        </div>
+      </Router>
     );
   }
 }
