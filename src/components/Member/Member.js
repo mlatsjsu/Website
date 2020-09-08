@@ -1,7 +1,7 @@
 import React from 'react';
-import defaultAvatar from '../../../static_images/default-avatar.png';
+import defaultAvatar from '../../static_images/default-avatar.png';
 
-export default function TeamMem(props) {
+export default function Member(props) {
   const { mem } = props;
   return (
     <div

@@ -4,6 +4,7 @@ export const url = {
   schedules: 'https://sjsuml-cms.herokuapp.com/schedules',
   committees: 'https://sjsuml-cms.herokuapp.com/committees',
   teammems: 'https://sjsuml-cms.herokuapp.com/teammems',
+  alumni: 'https://sjsuml-cms.herokuapp.com/alumni',
   projects: 'https://sjsuml-cms.herokuapp.com/projects',
   rules: 'https://sjsuml-cms.herokuapp.com/getinvolveds',
   contacts: 'https://sjsuml-cms.herokuapp.com/contacts',
