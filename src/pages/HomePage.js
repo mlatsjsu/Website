@@ -15,7 +15,6 @@ export default function HomePage(props) {
   const {
     carousels,
     missions,
-    schedules,
     committees,
     teammems,
     projects,
@@ -30,7 +29,7 @@ export default function HomePage(props) {
       <HeaderImageSlide carousels={carousels} />
       <Mission missions={missions} />
       <Banner />
-      <Schedules schedules={schedules} />
+      <Schedules />
       <Committees committees={committees} />
       <Team teammems={teammems} />
       <Projects projects={projects} />

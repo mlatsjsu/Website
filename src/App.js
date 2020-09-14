@@ -5,13 +5,13 @@ import thumbnail from './static_images/thumbnail.png';
 import { HomePage, AlumniPage, NotFound } from './pages';
 import { Footer } from './components';
 import { url } from './url';
+import img from './static_images/under_maintenance.png';
 
 class App extends Component {
   state = {
     appState: {
       carousels: [],
       missions: [],
-      schedules: [],
       committees: [],
       teammems: [],
       alumni: [],
@@ -23,15 +23,16 @@ class App extends Component {
       linkedin: '',
       youtube: '',
     },
+    isLoading: false,
     isLoadedAll: false,
   };
 
   async componentDidMount() {
     try {
+      await this.setState({ isLoading: true });
       const [
         carouselsRes,
         missionsRes,
-        schedulesRes,
         committeesRes,
         teammemsRes,
         alumniRes,
@@ -42,7 +43,6 @@ class App extends Component {
       ] = await Promise.all([
         fetch(url.carousels),
         fetch(url.missions),
-        fetch(url.schedules),
         fetch(url.committees),
         fetch(url.teammems),
         fetch(url.alumni),
@@ -55,7 +55,6 @@ class App extends Component {
       const [
         carousels,
         missions,
-        schedules,
         committees,
         teammems,
         alumni,
@@ -66,7 +65,6 @@ class App extends Component {
       ] = await Promise.all([
         carouselsRes.json(),
         missionsRes.json(),
-        schedulesRes.json(),
         committeesRes.json(),
         teammemsRes.json(),
         alumniRes.json(),
@@ -75,17 +73,6 @@ class App extends Component {
         usersRes.json(),
         contactsRes.json(),
       ]);
-
-      const convertedSchedules = schedules.map((meeting) => ({
-        id: meeting.id,
-        date: this._convertUTCDateToLocalDate(meeting.date),
-        topic: meeting.topic,
-        description: meeting.description,
-        location: meeting.location,
-        link: meeting.link ? meeting.link : '',
-      }));
-
-      convertedSchedules.sort((b, a) => a.date.getTime() - b.date.getTime());
 
       const processedCommittees = committees.map((committee) => {
         if (committee.leaders.length) {
@@ -115,7 +102,6 @@ class App extends Component {
         ...this.state.appState,
         carousels,
         missions,
-        schedules: convertedSchedules,
         committees: processedCommittees,
         teammems,
         alumni,
@@ -127,20 +113,20 @@ class App extends Component {
         linkedin: contacts[0].linkedin,
         youtube: contacts[0].youtube,
       };
-      this.setState({ appState, isLoadedAll: true });
+      this.setState({ appState, isLoadedAll: true, isLoading: false });
     } catch (err) {
-      this.setState({ isLoadedAll: false });
+      this.setState({ isLoadedAll: false, isLoading: false });
     }
   }
 
-  _convertUTCDateToLocalDate = (datestring) => {
-    const newDate = new Date(datestring);
-    const offset = newDate.getTimezoneOffset() / 60;
-    const hours = newDate.getHours();
-    newDate.setHours(hours + offset);
+  // _convertUTCDateToLocalDate = (datestring) => {
+  //   const newDate = new Date(datestring);
+  //   const offset = newDate.getTimezoneOffset() / 60;
+  //   const hours = newDate.getHours();
+  //   newDate.setHours(hours + offset);
 
-    return newDate;
-  };
+  //   return newDate;
+  // };
 
   renderHelMet = () => {
     return (
@@ -179,13 +165,12 @@ class App extends Component {
   };
 
   render() {
-    const { appState, isLoadedAll } = this.state;
+    const { appState, isLoadedAll, isLoading } = this.state;
     const { slack, email, linkedin, youtube } = appState;
 
     const homeState = {
       carousels: appState.carousels,
       missions: appState.missions,
-      schedules: appState.schedules,
       committees: appState.committees,
       teammems: appState.teammems,
       projects: appState.projects,
@@ -198,8 +183,30 @@ class App extends Component {
       alumni: appState.alumni,
     };
 
-    if (!isLoadedAll) {
+    if (isLoading) {
       return null;
+    }
+
+    if (!isLoadedAll) {
+      return (
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            alt="maintenance"
+            src={img}
+            style={{ maxWidth: '100%', maxHeight: '100%' }}
+          />
+        </div>
+      );
     }
 
     return (
