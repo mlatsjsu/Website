@@ -175,6 +175,7 @@ class App extends Component {
       teammems: appState.teammems,
       projects: appState.projects,
       rules: appState.rules,
+      slack,
       numberOfUsers: appState.numberOfUsers,
     };
 
