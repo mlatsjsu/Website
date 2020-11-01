@@ -32,7 +32,7 @@ export default function Project(props) {
                 fontWeight: 500,
               }}
             >
-              View On Github
+              Link
             </a>
           ) : null}
         </div>
