@@ -26,13 +26,14 @@ export default function HomePage(props) {
   return (
     <div>
       <HomeNavBar />
-      <HeaderImageSlide carousels={carousels} />
-      <Mission missions={missions} />
-      <Banner />
+        <Mission missions={missions} />
       <Schedules />
-      <Committees committees={committees} />
+        {/*<HeaderImageSlide carousels={carousels} /> */}
+      <Banner />
+        {/*<Committees committees={committees} /> */}
+        <Projects projects={projects} />
       <Team teammems={teammems} />
-      <Projects projects={projects} />
+
       <GetInvolved rules={rules} numberOfUsers={numberOfUsers} slack={slack} />
     </div>
   );

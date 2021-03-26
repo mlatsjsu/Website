@@ -88,7 +88,7 @@ export default function GetInvolved(props) {
                 </a>
                 to access our supportive community of{' '}
                 <span style={{ color: '#f18b6d', fontSize: 22 }}>
-                  {numberOfUsers}
+                  {numberOfUsers} {/* TODO Make sure num users is pulled correctly from backend */}
                 </span>{' '}
                 machine learning enthusiasts! This is the best way to get
                 notifications for upcoming events.

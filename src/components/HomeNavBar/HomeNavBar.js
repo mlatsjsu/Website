@@ -40,23 +40,23 @@ export default function NavBar() {
                   >
                     <AnchorLink href="#schedule">Schedule</AnchorLink>
                   </li>
-                  <li
+                  {/*<li
                     id="menu-item-18"
                     className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-18"
                   >
                     <AnchorLink href="#committees">Committees</AnchorLink>
-                  </li>
-                  <li
-                    id="menu-item-19"
-                    className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"
-                  >
-                    <AnchorLink href="#our-team">Our Team</AnchorLink>
-                  </li>
+                  </li>*/}
                   <li
                     id="menu-item-20"
                     className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-20"
                   >
                     <AnchorLink href="#projects">Projects</AnchorLink>
+                  </li>
+                  <li
+                      id="menu-item-19"
+                      className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-19"
+                  >
+                    <AnchorLink href="#our-team">Our Team</AnchorLink>
                   </li>
                   <li
                     id="menu-item-21"
