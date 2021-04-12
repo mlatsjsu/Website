@@ -18,7 +18,7 @@ export default function Project(props) {
           </p>
           <p className="card-text" style={{ fontSize: 14 }}>
             {project.description}
-          </p>
+          </p> {/*TODO: Cut off text after certain word limit (Show more instead) */}
           {project.link ? (
             <a
               href={project.link}

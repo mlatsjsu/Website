@@ -1,21 +1,21 @@
 import React from 'react';
 import {
   HomeNavBar,
-  HeaderImageSlide,
+  //HeaderImageSlide,
   Mission,
   Schedules,
   Projects,
   Banner,
-  Committees,
+  //Committees,
   Team,
   GetInvolved,
 } from '../components';
 
 export default function HomePage(props) {
   const {
-    carousels,
+    //carousels,
     missions,
-    committees,
+    //committees,
     teammems,
     projects,
     rules,
@@ -26,13 +26,14 @@ export default function HomePage(props) {
   return (
     <div>
       <HomeNavBar />
-      <HeaderImageSlide carousels={carousels} />
-      <Mission missions={missions} />
-      <Banner />
+        <Mission missions={missions} />
       <Schedules />
-      <Committees committees={committees} />
+        {/*<HeaderImageSlide carousels={carousels} /> */}
+      <Banner />
+        {/*<Committees committees={committees} /> */}
+        <Projects projects={projects} />
       <Team teammems={teammems} />
-      <Projects projects={projects} />
+
       <GetInvolved rules={rules} numberOfUsers={numberOfUsers} slack={slack} />
     </div>
   );

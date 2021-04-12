@@ -9,7 +9,7 @@ export default function Mission(props) {
 
   return (
     <section id="about" className="front-page-section">
-      <div className="section-header" style={{ marginBottom: 0 }}>
+      <div className="section-header" style={{ marginBottom: 0, marginTop: 50 }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
