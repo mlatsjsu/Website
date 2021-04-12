@@ -95,9 +95,8 @@ class App extends Component {
       projects.sort((a, b) => a.order - b.order);
 
       rules.sort((a, b) => a.order - b.order);
-      console.log(missions);
 
-      //const filterUsers = users.members.filter((user) => !user.is_bot);
+      const filterUsers = users.members.filter((user) => !user.is_bot);
 
       const appState = {
         ...this.state.appState,
@@ -109,14 +108,14 @@ class App extends Component {
         projects,
         rules,
         email: contacts[0].email,
+        numberOfUsers: filterUsers.length,
         slack: contacts[0].slack,
         linkedin: contacts[0].linkedin,
         youtube: contacts[0].youtube,
       };
       this.setState({ appState, isLoadedAll: true, isLoading: false });
     } catch (err) {
-      console.log(err);
-      this.setState({ isLoadedAll: true, isLoading: false });
+      this.setState({ isLoadedAll: false, isLoading: false });
     }
   }
 
