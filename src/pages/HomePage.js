@@ -1,21 +1,21 @@
 import React from 'react';
 import {
   HomeNavBar,
-  HeaderImageSlide,
+  //HeaderImageSlide,
   Mission,
   Schedules,
   Projects,
   Banner,
-  Committees,
+  //Committees,
   Team,
   GetInvolved,
 } from '../components';
 
 export default function HomePage(props) {
   const {
-    carousels,
+    //carousels,
     missions,
-    committees,
+    //committees,
     teammems,
     projects,
     rules,
