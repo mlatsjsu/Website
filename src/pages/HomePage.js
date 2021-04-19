@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   HomeNavBar,
-  //HeaderImageSlide,
+  HeaderImageSlide,
   Mission,
   Schedules,
   Projects,
@@ -13,7 +13,7 @@ import {
 
 export default function HomePage(props) {
   const {
-    //carousels,
+    carousels,
     missions,
     //committees,
     teammems,
@@ -26,9 +26,9 @@ export default function HomePage(props) {
   return (
     <div>
       <HomeNavBar />
+        <HeaderImageSlide carousels={carousels} />
         <Mission missions={missions} />
       <Schedules />
-        {/*<HeaderImageSlide carousels={carousels} /> */}
       <Banner />
         {/*<Committees committees={committees} /> */}
         <Projects projects={projects} />
