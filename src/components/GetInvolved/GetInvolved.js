@@ -2,7 +2,7 @@ import React from 'react';
 import pattern from '../../static_images/pattern.png';
 
 export default function GetInvolved(props) {
-  const { rules, numberOfUsers, slack } = props;
+  const { rules, numberOfUsers } = props;
 
   const renderRules = () => {
     return (
@@ -80,11 +80,11 @@ export default function GetInvolved(props) {
                 <br />
                 First,{' '}
                 <a
-                  href={slack}
+                  href='https://discord.gg/kVparFSSV4'
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  join us on Slack{' '}
+                  join us on Discord{' '}
                 </a>
                 to access our supportive community of{' '}
                 <span style={{ color: '#f18b6d', fontSize: 22 }}>

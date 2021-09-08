@@ -30,7 +30,7 @@ export default function Footer(props) {
                   style={{ color: '#777' }}
                 >
                   <i
-                    className="fa fa-linkedin"
+                    className="fab fa-linkedin-in"
                     aria-hidden="true"
                     style={{ fontSize: 28, padding: '0 5px' }}
                   />
@@ -38,15 +38,14 @@ export default function Footer(props) {
               ) : null}
               {slack ? (
                 <a
-                  href={slack}
+                  href='https://discord.gg/kVparFSSV4'
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: '#777' }}
                 >
-                  <i
-                    className="fa fa-slack"
-                    aria-hidden="true"
-                    style={{ fontSize: 28, padding: '0 5px' }}
+                  <i className="fab fa-discord"
+                     aria-hidden="true"
+                     style={{ fontSize: 28, padding: '0 5px' }}
                   />
                 </a>
               ) : null}
@@ -58,7 +57,7 @@ export default function Footer(props) {
                   style={{ color: '#777' }}
                 >
                   <i
-                    className="fa fa-youtube-play"
+                    className="fab fa-youtube"
                     aria-hidden="true"
                     style={{ fontSize: 28, padding: '0 5px' }}
                   />
