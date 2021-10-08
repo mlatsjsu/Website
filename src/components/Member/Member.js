@@ -33,7 +33,7 @@ export default function Member(props) {
               style={{ color: '#0e76a8', fontSize: 20 }}
             >
               <i
-                className="fa fa-linkedin"
+                className="fab fa-linkedin-in"
                 aria-hidden="true"
                 style={{ marginRight: 12 }}
               />
@@ -46,7 +46,7 @@ export default function Member(props) {
               rel="noopener noreferrer"
               style={{ color: '#333', fontSize: 20 }}
             >
-              <i className="fa fa-github" aria-hidden="true" />
+              <i className="fab fa-github" aria-hidden="true" />
             </a>
           ) : null}
         </div>
